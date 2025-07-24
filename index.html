@@ -1,56 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #2c3e50, #3498db);
-      color: white;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.2em;
-    }
-    p {
-      font-size: 1em;
-      opacity: 0.9;
-    }
-    a {
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #fff;
-      color: #3498db;
-      border: none;
-      border-radius: 6px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    a:hover {
-      background-color: #f0f0f0;
-    }
-  </style>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const urlParams = new URLSearchParams(window.location.search);
-      const linkParam = urlParams.get('start');
-      if (linkParam) {
-        const telegramUrl = "https://t.me/botdemohhhgs_bot?start=" + linkParam;
-        window.location.href = telegramUrl;
-      }
-    });
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting To Your Link</title>
+    <script type="text/javascript">
+      
+      // Code Credit Goes To Yt - Tech VJ / GitHub - VJBots / Telegram - VJ_Botz
+        document.addEventListener("DOMContentLoaded", function() {
+            // Check if the URL contains the 'Tech_VJ' parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const linkParam = urlParams.get('start');
+            
+            // If the Tech_VJ parameter exists, redirect to Telegram
+            if (linkParam) {
+                const telegramUrl = "https://telegram.me/DoluramFilesBot?start=" + linkParam;
+                window.location.href = telegramUrl; // Redirect to the constructed Telegram URL
+            }
+        });
+      // Code Credit Goes To Yt - Tech VJ / GitHub - VJBots / Telegram - VJ_Botz
+    </script>
 </head>
 <body>
+    <h1>Redirecting To Your Link</h1>
+    <p>Subscribe Below YouTube Channel</p>
+    <a href="https://youtube.com/@technokrrish">Subscribe Here</a>
+</body>
 </html>
