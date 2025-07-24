@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redirecting...</title>
+  <script>
+    // Extract redirect code from URL
+    const params = new URLSearchParams(window.location.search);
+    const startParam = params.get('start');
+
+    // Add a version param to bypass cache
+    const version = Date.now();
+
+    if (startParam) {
+      window.location.href = `https://t.me/DoluramFilesBot?start=${startParam}&v=${version}`;
+    } else {
+      window.location.href = `https://t.me/DoluramFilesBot?v=${version}`;
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting to Telegram...</p>
+</body>
+</html>
